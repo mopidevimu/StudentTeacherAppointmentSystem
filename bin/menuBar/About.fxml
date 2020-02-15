@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="311.0" fitWidth="537.0" layoutY="-1.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/about-bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="23.0" prefHeight="31.0" prefWidth="448.0" text="STUDENT-TEACHER APPOINTMENT SYSTEM">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="29.0" layoutY="53.0" prefHeight="0.0" prefWidth="476.0" style="-fx-background-color: #000;" />
+      <Label layoutX="45.0" layoutY="64.0" prefHeight="27.0" prefWidth="136.0" text="VERSION-1.0v">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="96.0" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #fff;" text="CREATED BY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="96.0" prefHeight="27.0" prefWidth="119.0" style="-fx-background-color: #fff;" text="PROJECT_RED" textFill="#ff1f1f">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="131.0" prefHeight="35.0" prefWidth="106.0" text="ADEO-01" textFill="#2402d0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="166.0" prefHeight="43.0" prefWidth="149.0" text="2018-2020">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="181.0" fitWidth="150.0" layoutX="359.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/eistilogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

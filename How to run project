@@ -1,0 +1,10 @@
+How to Run the project-Student Teacher Management 
+	Import the project into eclipse IDE
+	The project is dependent on referenced libraries namely
+			1. TrayNotification.Jar
+			2. MySql-connector-java-5.1.39.jar
+			3. Jfoenix.jar
+	One can find all these dependent libraries the attached zip folder of this project
+	One also finds the Sql file, which you will have to import into your database server
+	In the DBConnection.java update the connection line
+	Now you are ready to build and run the project

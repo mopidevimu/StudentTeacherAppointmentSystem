@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminCourse">
+    <children>
+        <BorderPane layoutX="464.0" layoutY="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="27.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <MenuBar prefHeight="25.0" prefWidth="1500.0" style="-fx-background-color: #123;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <menus>
+                                <Menu style="-fx-color: #123;" text="File">
+                                    <items>
+                                        <MenuItem onAction="#setCourseCloseButtonClick" style="-fx-background-color: #123;" text="Close" />
+                                    </items>
+                                </Menu>
+                                <Menu style="-fx-color: #123;" text="Edit">
+                                    <items>
+                                        <MenuItem style="-fx-background-color: #123;" text="Course Panel" />
+                                    </items>
+                                </Menu>
+                                <Menu style="-fx-color: #123;" text="Help">
+                                    <items>
+                                        <MenuItem onAction="#setCourseAboutButtonClick" style="-fx-background-color: #123;" text="About" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </children>
+                </AnchorPane>
+            </top>
+            <center>
+                <SplitPane dividerPositions="0.29797979797979796" prefHeight="775.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="775.0" prefWidth="450.0" style="-fx-background-color: #123;" SplitPane.resizableWithParent="false">
+                            <children>
+                                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseAddNewButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00b300; -fx-text-fill: white;" text="ADD" AnchorPane.leftAnchor="14.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Add_User_Male_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <Button layoutX="169.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseEditButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #0054ab;" text="Edit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Edit_Property_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <Button alignment="CENTER" layoutX="313.0" layoutY="14.0" mnemonicParsing="false" onAction="#setCourseDeleteButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e41919; -fx-text-fill: white;" text="DELETE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Trash_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <Text fill="#e41919" layoutX="126.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE DETAILS" AnchorPane.bottomAnchor="679.482421875" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="170.6640625" AnchorPane.topAnchor="57.576171875">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Separator layoutX="12.0" layoutY="86.0" prefHeight="4.0" prefWidth="322.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="86.0" />
+                                <GridPane layoutX="27.0" layoutY="135.0" prefHeight="492.0" prefWidth="387.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="135.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="133.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="254.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE CODE">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="courseTFCode" disable="true" prefHeight="40.0" prefWidth="198.0" GridPane.columnIndex="1" />
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE TITLE" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="courseTFTitle" disable="true" prefHeight="40.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CREDIT SCORE" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="courseTFCredit" disable="true" prefHeight="40.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE SECTION" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="courseTFSec" disable="true" prefHeight="40.0" prefWidth="198.0" promptText="e.g. SA,B,NA" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    </children>
+                                </GridPane>
+                                <Button fx:id="courseClearButtonClick" disable="true" layoutX="48.0" layoutY="706.0" mnemonicParsing="false" onAction="#setCourseClearButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e41919; -fx-text-fill: white;" text="CLEAR" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="706.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Clear_Symbol_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <Button fx:id="courseSaveButtonClick" disable="true" layoutX="290.0" layoutY="706.0" mnemonicParsing="false" onAction="#setCourseSaveButtonClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00b300; -fx-text-fill: white;" text="SAVE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Save_26px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Separator layoutX="13.0" layoutY="686.0" prefHeight="4.0" prefWidth="323.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="12.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1050.0" style="-fx-background-color: #123;">
+                            <children>
+                                <TextField fx:id="courseTFSearch" layoutX="600.0" layoutY="14.0" prefHeight="32.0" prefWidth="267.0" promptText="COURSE CODE" AnchorPane.rightAnchor="178.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></TextField>
+                                <Button layoutX="889.0" layoutY="13.0" mnemonicParsing="false" onAction="#setCourseSearchButtonClick" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #0054ab;" text="SEARCH" textFill="WHITE" AnchorPane.rightAnchor="37.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Search_Property_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <Button layoutX="55.0" layoutY="13.0" mnemonicParsing="false" onAction="#setCourseRefreshButtonClick" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #00b300;" text="REFRESH" textFill="WHITE" AnchorPane.leftAnchor="55.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8_Refresh_26px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                                <TableView fx:id="adminCourseTableView" editable="true" layoutX="2.0" layoutY="58.0" prefHeight="703.0" prefWidth="1047.0" style="-fx-background-color: #258;" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="58.0">
+                                    <columns>
+                                        <TableColumn fx:id="adminCourseTableNo" prefWidth="59.0" text="NO" />
+                                        <TableColumn fx:id="adminCourseTableCode" prefWidth="161.0" text="COURSE CODE" />
+                                        <TableColumn fx:id="adminCourseTableTitle" prefWidth="281.0" text="COURSE TITLE" />
+                                        <TableColumn fx:id="adminCourseTableCredit" prefWidth="219.0" text="COURSE CREDIT" />
+                                        <TableColumn fx:id="adminCourseTableSec" prefWidth="325.0" text="COURSE SECTION" />
+                                    </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                                </TableView>
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

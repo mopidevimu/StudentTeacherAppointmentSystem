@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="admin.AdminTeacherController" project="project_red_003" 
+    file="/project_red_003/src/admin/AdminTeacherController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2113" y="1220"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="database.DBConnection" project="project_red_003" 
+    file="/project_red_003/src/database/DBConnection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="178" width="186" x="1288" y="837"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="admin.AdminCourse" project="project_red_003" 
+    file="/project_red_003/src/admin/AdminCourse.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1995" y="303"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="admin.Admin" project="project_red_003" 
+    file="/project_red_003/src/admin/Admin.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1522" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="student.RegistrationController" project="project_red_003" 
+    file="/project_red_003/src/student/RegistrationController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1604" y="1519"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="teacher.TeacherController" project="project_red_003" 
+    file="/project_red_003/src/teacher/TeacherController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="424" y="415"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="student.Student" project="project_red_003" 
+    file="/project_red_003/src/student/Student.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="920" y="450"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="8">    
+    <bendpoint x="1879" y="968"/>    
+    <bendpoint x="1477" y="968"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="9" name="database"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="11">    
+    <bendpoint x="1982" y="651"/>    
+    <bendpoint x="1983" y="775"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="12" name="database"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="14">    
+    <bendpoint x="420" y="1029"/>    
+    <bendpoint x="1072" y="1031"/>    
+    <bendpoint x="1236" y="1031"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="15" name="database"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="18" name="database"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <bendpoint x="1452" y="1153"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="21" name="database"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <bendpoint x="930" y="1382"/>    
+    <bendpoint x="1366" y="1379"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="24" name="registrationController"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="26">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="27" name="database"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

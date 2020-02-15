@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recordSystemMain.MainLoginController">
+
+
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1200.0" layoutX="-1.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/backgroung.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="141.0" fitWidth="100.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/eistilogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="28.0" prefHeight="51.0" prefWidth="735.0" text="STUDENT-TEACHER APPOINTMENT SYSTEM" textFill="#e41919">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="118.0" layoutY="211.0" prefHeight="270.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="247.0" prefHeight="50.0" prefWidth="130.0" text="LOGIN" textFill="#e41919">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Separator layoutX="38.0" layoutY="53.0" prefHeight="0.0" prefWidth="547.0" style="-fx-background-color: #cccccc;" />
+            <Label layoutX="37.0" layoutY="84.0" prefHeight="47.0" prefWidth="185.0" text="USERNAME/ID">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Administrator_Male_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="tfEmailID" layoutX="226.0" layoutY="84.0" prefHeight="50.0" prefWidth="360.0" />
+            <Label layoutX="37.0" layoutY="145.0" prefHeight="47.0" prefWidth="185.0" text="PASSWORD">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Password_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <PasswordField fx:id="pfPassword" layoutX="226.0" layoutY="145.0" prefHeight="50.0" prefWidth="360.0" />
+       
+             
+						  <ChoiceBox fx:id="cbUser" layoutX="234.0" layoutY="214.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #01ADEF;" value="Student">
+                                  <items>
+                                      <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Admin" />
+                                          <String fx:value="Teacher" />
+                                          <String fx:value="Student" />
+                                      </FXCollections>
+                                  </items>
+                              </ChoiceBox>
+						
+						<Button layoutX="448.0" layoutY="214.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #014FA2;" text="SUBMIT" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Login_26px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
